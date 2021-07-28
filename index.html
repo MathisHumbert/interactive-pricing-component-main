@@ -16,88 +16,96 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Interactive pricing component</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
-      <img src="./images/bg-pattern.svg" alt="" />
-      <div class="container">
-        <!-- title info -->
-        <div class="title">
-          <img src="./images/pattern-circles.svg" alt="" />
-          <h1>Simple, traffic-based pricing</h1>
-          <p>Sign-up for our 30-day trial. No credit card required.</p>
-        </div>
-        <!-- card -->
-        <div class="card">
-          <!-- top -->
-          <div class="top">
-            <!-- price -->
-            <div class="price">
-              <p class="pageviews">Pageviews</p>
-              <form>
-                <input
-                  type="range"
-                  class="price-input"
-                  min="0"
-                  max="32"
-                  value="16"
-                />
-                <h3 class="price-value">$16.00 <span>/month</span></h3>
-              </form>
-            </div>
-            <!-- btn-container -->
-            <div class="btn-container">
-              <p>Monthly Billing</p>
-              <div class="toggle-container">
-                <i class="fas fa-circle"></i>
+      <img src="./images/bg-pattern.svg" class="pattern" />
+      <article>
+        <div class="container">
+          <!-- title info -->
+          <div class="title">
+            <img src="./images/pattern-circles.svg" class="circle" />
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <!-- top -->
+            <div class="top">
+              <!-- price -->
+              <div class="price">
+                <div class="title-price"></div>
+                <p class="pageviews"></p>
+                <form>
+                  <input
+                    type="range"
+                    class="price-input"
+                    min="0"
+                    max="32"
+                    value="16"
+                  />
+                  <div class="price-value">
+                    <h3 class="price-change">$16.00</h3>
+                    <span>/month</span>
+                  </div>
+                </form>
               </div>
-              <p>Yearly Billing</p>
-              <p class="discount">-25%</p>
+              <!-- btn-container -->
+              <div class="btn-container">
+                <p>Monthly Billing</p>
+                <div class="toggle-container">
+                  <i class="fas fa-circle"></i>
+                </div>
+                <div class="year full">
+                  <p>Yearly Billing</p>
+                  <p class="discount">
+                    <span class="small">-</span>25%
+                    <span class="large">discount</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- bottom -->
+            <div class="bottom">
+              <!-- info -->
+              <div class="info">
+                <!-- single info -->
+                <div class="single-info">
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>Unlimited websites</p>
+                </div>
+                <!-- single info -->
+                <div class="single-info">
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>100% data ownership</p>
+                </div>
+                <!-- single info -->
+                <div class="single-info">
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>Email reports</p>
+                </div>
+              </div>
+              <button class="btn">Start my trial</button>
             </div>
           </div>
-          <!-- bottom -->
-          <div class="bottom">
-            <!-- info -->
-            <div class="info">
-              <!-- single info -->
-              <div class="single-info">
-                <img src="./images/icon-check.svg" alt="" />
-                <p>Unlimited websites</p>
-              </div>
-              <!-- single info -->
-              <div class="single-info">
-                <img src="./images/icon-check.svg" alt="" />
-                <p>100% data ownership</p>
-              </div>
-              <!-- single info -->
-              <div class="single-info">
-                <img src="./images/icon-check.svg" alt="" />
-                <p>Email reports</p>
-              </div>
-            </div>
-            <button class="btn">Start my trial</button>
-          </div>
         </div>
-      </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Mathis Humbert</a>.
+        </div>
+      </article>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
